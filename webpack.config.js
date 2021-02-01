@@ -21,8 +21,8 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|css)$/,
-        type: "asset/resource",
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
